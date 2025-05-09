@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><code>WELCOME !!!</code></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFa4oxF98widw/profile-displayphoto-shrink_800_800/B56Zaa_5x1HUAc-/0/1746357167259?e=1752105600&v=beta&t=MXSr0kXsyMHKh6IF3UvEtZeJFzXeAWNuDINOignJ-Ds" alt="Vivekananda" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vivekananda</h1>
+        <p class="section__text__p2">Student at MLRITM</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bandavula-vivekananda-296b92253/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vivekananda-12'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3442/3442327.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Active Inclusion</h3>
+              <p>Adobe carrer academy'24 mentee<br>Active Member of GDSC<BR>Club Coordinator of Empathy,<br>Organic Farmerette club  </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmgrsnR_Zvn2vMxYCBCTofSkJltrOoqHYcUQ&s"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech-CSE[2022-2026]<br>Intermediate-MPC [2020-2022]<br></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             &nbsp&nbsp&nbsp I'm V. Tejasri, a passionate individual from the charming Village of Amalapuram in East Godavari. Currently,embarking on the exhilarating journey of third year in pursuing a Bachelor's degree in Technology.<br>&nbsp&nbsp&nbsp I've immersed myself in a diverse array of Programming in Java, C, and Python to the dynamic realms of HTML, CSS, and JavaScript, SQL.
+Beyond my technical pursuits, I take pride in being a social butterfly, thriving in collaborative environments and cherishing every opportunity to connect with others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container project">
+              <img
+                src="./assets/project_libratech.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <div class="overlay">
+                <h2 class="experience-sub-title project-title">LIBRATECH</h2>
+                <p>
+                  **_FEATURES_**<br>
+                  &nbsp1,Effortless Book Search<br>
+                  &nbsp2,Book Request<br>
+                  &nbsp3,Books updation<br>
+                  &nbsp4,Real-Time Updates<br>
+                </p>
+                <br>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/VittanalaTejasri/Libra_Tech_python'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://youtu.be/kmbDwYcFiGk'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container project">
+              <img
+                src="./assets/project_gdsc.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+              <div class="overlay">
+                <h2 class="experience-sub-title project-title">Sustain Sphere</h2>
+                <p>
+                  **_FEATURES_**<br>
+                  &nbsp1,Interactive Learning<br> 
+                  &nbsp2,User Authentication <br>
+                  &nbsp3,Profile Management
+                </p>
+                <br>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/VittanalaTejasri/SustainSphere'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://www.youtube.com/watch?v=70rHZNvhGBg'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My Certifications</p>
+      <h1 class="title">Certifications</h1>
+      <br><br>
+      <div class="skills-container">
+        <div class="skill-box" onclick="toggleSkillDescription('Foundations of Cyber security')">
+          <div class="skill-info">
+            <h3>Foundations of Cyber security <span class="platform">- Coursera</span></h3>
+          </div>
+          <div class="skill-description" id="Foundations of Cyber security-description" style="display: none;">
+            <p>"Foundations of Cyber Security" provides a comprehensive introduction to the fundamental principles and practices essential for safeguarding digital assets and information systems. Participants gain insights into identifying vulnerabilities and implementing effective countermeasures to protect against cyber threats.</p>
+          </div>
+        </div>
+        <br>
+        <div class="skill-box" onclick="toggleSkillDescription('Programming with Java')">
+          <div class="skill-info">
+            <h3>Programming with Java <span class="platform">- Oracle Academy</span></h3>
+          </div>
+          <div class="skill-description" id="Programming with Java-description" style="display: none;">
+            <p>Course helps to gain proficiency in Java syntax, object-oriented programming principles, and practical application development, making it ideal for aspiring software developers seeking to build robust and scalable applications.</p>
+          </div>
+        </div>
+        <br>
+        <div class="skill-box" onclick="toggleSkillDescription('Data Base Programming with SQL')">
+          <div class="skill-info">
+            <h3>Data Base Programming with SQL <span class="platform">- Oracle Academy</span></h3>
+          </div>
+          <div class="skill-description" id="Data Base Programming with SQL-description" style="display: none;">
+            <p>Database Programming with SQL equips individuals with essential skills in SQL, enabling them to effectively manage and manipulate data within relational database systems. This certification covers fundamental database concepts and SQL queries, essential for developing and maintaining robust database-driven application</p>
+          </div>
+        </div>
+        <br>
+        <div class="skill-box" onclick="toggleSkillDescription('MACHINE LEARNING with python')">
+          <div class="skill-info">
+            <h3>MACHINE LEARNING with python <span class="platform">- IBM</span></h3>
+          </div>
+          <div class="skill-description" id="MACHINE LEARNING with python-description" style="display: none;">
+            <p>Delve into the world of machine learning with Python through this course, gaining hands-on experience in building and deploying machine learning models for various applications, backed by IBM's expertise in data science and AI.</p>
+          </div>
+        </div>
+        <br>
+        <div class="skill-box" onclick="toggleSkillDescription('AI for Everyone')">
+          <div class="skill-info">
+            <h3>AI for Everyone <span class="platform">- Coursera</span></h3>
+          </div>
+          <div class="skill-description" id="AI for Everyone-description" style="display: none;">
+            <p>AI for Everyone is a beginner-friendly course that introduces the principles and applications of artificial intelligence, catering to individuals from diverse backgrounds. Through accessible lectures, it empowers learners to understand AI's impact on society and make informed decisions regarding its adoption.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:bandavulavivek@gmail.com">bandavulavivek@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bandavula-vivekananda-296b92253/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Certifications</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      function toggleSkillDescription(skillId) {
+        var description = document.getElementById(skillId + "-description");
+        if (description.style.display === "none") {
+          description.style.display = "block";
+        } else {
+          description.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
